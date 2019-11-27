@@ -1,0 +1,24 @@
+Package: jpplot2
+Title: Make Journalism++ Style Graphics With ggplot2
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Clara",
+           family = "Guibourg",
+           role = c("aut", "cre"),
+           email = "clara@newsworthy.se",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Changes the default ggplot2 style to Journalism++ style
+Depends: R (>= 3.4.0)
+Imports: 
+  ggplot2,
+  png,
+  grid,
+  ggpubr,
+  dplyr,
+  rmapshaper,
+  rgdal,
+  data.table
+License: What license it uses
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.1
