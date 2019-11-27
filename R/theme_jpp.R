@@ -12,7 +12,7 @@
 
 theme_jpp <- function() {
 
-  font <- "Open Sans"
+  font <- "Helvetica"
 
   theme(
 
