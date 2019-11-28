@@ -1,5 +1,5 @@
 Package: jpplot2
-Title: Make Journalism++ Style Graphics With ggplot2
+Title: Make Journalism++ Style Maps and Graphics With ggplot2
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Clara",
