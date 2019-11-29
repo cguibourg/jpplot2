@@ -12,7 +12,7 @@
 
 #Municipality-level map of Sweden, where the electoral district ID is the default
 se_elex_district <- function(keep = 0.05, region = 'VD'){
-  shapefile <- rgdal::readOGR(dsn = 'shapefiles/2018_valgeografi_valdistrikt',
+  shapefile <- rgdal::readOGR(dsn = '~/Documents/Data/jpplot2/2018_valgeografi_valdistrikt',
                               layer = 'alla_valdistrikt')
   simplified <- rmapshaper::ms_simplify(shapefile, keep)
   ggplot2::fortify(simplified, region = region)

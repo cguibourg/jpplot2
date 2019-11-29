@@ -12,7 +12,7 @@
 
 #world map, where ISO3 is the default
 world_map <- function(keep = 0.05, region = 'ISO_A3'){
-  shapefile <- rgdal::readOGR(dsn = 'shapefiles/ne_50m_admin_0_countries',
+  shapefile <- rgdal::readOGR(dsn = '~/Documents/Data/jpplot2/ne_50m_admin_0_countries',
                               layer = 'ne_50m_admin_0_countries')
   simplified <- rmapshaper::ms_simplify(shapefile, keep)
   PROJ <- "+proj=robin +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"

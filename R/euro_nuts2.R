@@ -12,7 +12,7 @@
 
 #NUTS2 map, where NUTS_ID is the default
 euro_nuts2 <- function(keep = 0.05, region = 'NUTS_ID'){
-  shapefile <- rgdal::readOGR(dsn = 'shapefiles/ref-nuts-2016-20m.shp/NUTS_RG_20M_2016_4326_LEVL_2.shp',
+  shapefile <- rgdal::readOGR(dsn = '~/Documents/Data/jpplot2/ref-nuts-2016-20m.shp/NUTS_RG_20M_2016_4326_LEVL_2.shp',
                               layer = 'NUTS_RG_20M_2016_4326_LEVL_2')
   simplified <- rmapshaper::ms_simplify(shapefile, keep)
   ggplot2::fortify(simplified, region = region)

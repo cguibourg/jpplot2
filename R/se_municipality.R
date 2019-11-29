@@ -12,7 +12,7 @@
 
 #Municipality-level map of Sweden, where the municipality ID is the default
 se_municipality <- function(keep = 0.05, region = 'KOM'){
-  shapefile <- rgdal::readOGR(dsn = 'shapefiles/2018_valgeografi_kommuner',
+  shapefile <- rgdal::readOGR(dsn = '~/Documents/Data/jpplot2/2018_valgeografi_kommuner',
                               layer = 'alla_kommuner')
   simplified <- rmapshaper::ms_simplify(shapefile, keep)
   ggplot2::fortify(simplified, region = region)

@@ -12,7 +12,7 @@
 
 #County-level map of Sweden, where the county ID is the default
 se_county <- function(keep = 0.05, region = 'LAN'){
-  shapefile <- rgdal::readOGR(dsn = 'shapefiles/2018_valgeografi_lan',
+  shapefile <- rgdal::readOGR(dsn = '~/Documents/Data/jpplot2/2018_valgeografi_lan',
                               layer = 'alla_lan')
   simplified <- rmapshaper::ms_simplify(shapefile, keep)
   ggplot2::fortify(simplified, region = region)
