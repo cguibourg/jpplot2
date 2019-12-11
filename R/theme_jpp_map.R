@@ -12,7 +12,7 @@
 
 theme_jpp_map <- function() {
 
-  font <- "Helvetica"
+  font <- "OpenSans-Regular"
 
   theme(
 
@@ -31,14 +31,13 @@ theme_jpp_map <- function() {
     axis.line = element_blank(),
 
     #sets text styles
-    plot.title = element_text(family = font,
-                              size = 22,
+    plot.title = element_text(family = "OpenSansCondensed-Bold",
+                              size = 24,
                               face = "bold"),
     plot.subtitle = element_text(family = font,
                                  size = 18,
                                  margin = margin(8, 0, 9, 0)),
-    plot.caption = element_text(family = font,
-                                size = 12),
+    plot.caption = element_blank(),
     axis.text = element_text(family = font,
                              size = 14),
     legend.text = element_text(family = font,
